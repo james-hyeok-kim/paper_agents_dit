@@ -1,0 +1,12 @@
+- [SpecDiT validation](specdit-validation-2026-05.md) — Conditional Go pending pilot; compounding draft error and amortization vs SpeCa are blockers
+- [Common failure: speculative-X for diffusion](specdit-validation-2026-05.md#common-failure-pattern-observed) — conceptual umbrella claimed by SpeCa/Yoon-2501; mechanism-level + empirical proof required
+- [CondMask-DiT validation](validation_condmask_dit.md) — NO-GO at top-tier; CA-driven token sparsification fully overlapped by AT-EDM/IBTM/ToPi/CAT/DaTo
+- [DecoupledVAE validation](validation_decoupled_vae.md) — Conditional Go; gates on HBM-overlap microbench, LPIPS-vs-k curve, refiner-vs-FlashVAED baselines
+- [Pattern: combination-as-contribution](pattern_combination_as_contribution.md) — recurring failure mode: 3+ published mechanisms stitched, no new insight
+- [Pattern: partial-decode + refiner](pattern_partial_decode_refiner.md) — require LPIPS-vs-k curve and single-GPU overlap microbench before scoring this family
+- [Reference: token-pruning prior art](reference_token_pruning_prior_art.md) — verified arXiv IDs (AT-EDM, IBTM, ToPi, CAT, DaTo) and what each owns
+- [CascadePrompt validation](validation_cascadeprompt_2026_05.md) — Conditional Go; per-prompt heavy-tail histogram + wallclock verification gate the project
+- [MotionGate validation](validation_motiongate_2026-05.md) — NO-GO at top-tier; HSA (arXiv:2605.06892, 2026-05-07) preempts per-token motion-gating + skip-reuse for Video DiT. Pivot to occlusion-aware drop-in module.
+- [MMBlockAttn validation](validation_mmblockattn_2026-05.md) — NO-GO at top-tier; cross-modal sub-block is 3.6-19.8% of attention (worse than user's 12% est), e2e ceiling 1.04-1.11x, softmax coupling breaks rank approx. Workshop-only via SVD analysis pivot.
+- [ConvergeSense validation](validation_convergesense_2026-05.md) — NO-GO at top-tier; arithmetic gap (1.18x vs claimed 1.3-1.5x), StepSaver-equivalent supervision, AdaFlow/A2S cover velocity-derived adaptive sampling.
+- [StructPrior validation](validation_structprior_2026-05.md) — Conditional Go; multi-modality novelty closed by EVCtrl, only trunk-side surface survives. Gated on trunk-attn cost share >40% and naive mask FID<2.
