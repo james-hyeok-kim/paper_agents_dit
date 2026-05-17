@@ -4,17 +4,26 @@ DiT inference efficiency 실제 실험 코드 + 결과 저장소.
 
 ## 디렉토리 구조
 
-각 실험은 자체 폴더를 가짐:
+실험은 결과 상태별로 분류된 하위 폴더에 위치합니다:
 
 ```
 experiments/
-├── README.md
-├── {idea_name}_poc/          # PoC / gate 검증 실험
-│   ├── README.md             # 실험 목적, 방법, 결과
-│   ├── *.py                  # 실험 스크립트
-│   └── results/              # 측정값, 로그, 그래프
-└── {idea_name}_full/         # 전체 baseline 실험
-    └── ...
+├── README.md          ← this file
+├── fail/              ← polished off / abandoned ideas (gate FAIL or NO-GO)
+│   ├── cascadeprompt_poc/   🔴 Gate 1 FAIL
+│   ├── decoupledvae_poc/    🔴 Gate A FAIL/BORDERLINE
+│   ├── specdit_poc/         🔴 FAIL
+│   └── structprior_poc/     🔴 FAIL
+├── wip/               ← work-in-progress experiments
+└── success/           ← published / publishable experiments
+```
+
+각 실험 폴더 내부:
+```
+{name}_poc/
+├── README.md          # 실험 목적, 방법, 결과
+├── *.py               # 실험 스크립트
+└── results/           # 측정값, 로그, 그래프
 ```
 
 ## 진행 예정 실험
