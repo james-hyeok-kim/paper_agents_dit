@@ -1,7 +1,7 @@
 ---
 name: "dit-validator"
 description: "Use this agent to rigorously validate whether a DiT inference efficiency idea is truly feasible AND publishable. Plays devil's advocate (novelty stress test, technical feasibility, scope), AND assesses publication landscape (venue fit, competition timing, harsh-reviewer simulation). Gives a final 🟢 GO / 🟡 CONDITIONAL / 🔴 NO-GO + venue recommendation. Invoke AFTER dit-ideation has cleared novelty, or as a pre-compute quality + publishability gate.\n\n<example>\nContext: User wants final validation before allocating GPU time.\nuser: \"이 아이디어 진짜 paper 될 것 같아? GPU 쓰기 전에 확인해줘\"\nassistant: \"dit-validator로 rigor + venue feasibility 종합 검증할게요.\"\n<commentary>\nGo/no-go gate with publishability. Use dit-validator.\n</commentary>\n</example>\n\n<example>\nContext: User wants to know best venue for an idea.\nuser: \"이 아이디어 CVPR이랑 NeurIPS 중에 어디 내는 게 나을까?\"\nassistant: \"dit-validator로 venue fit + competition timing 분석해드릴게요.\"\n<commentary>\nVenue recommendation.\n</commentary>\n</example>"
-model: sonnet
+model: claude-sonnet-4-6
 memory: project
 ---
 

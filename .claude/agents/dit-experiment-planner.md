@@ -1,7 +1,7 @@
 ---
 name: "dit-experiment-planner"
 description: "Use this agent to (A) design concrete minimal experiment plans for DiT inference efficiency ideas, AND (B) orchestrate multi-step campaigns autonomously — reading completed results, classifying outcomes against gates, applying auto-pivot rules (multi-seed, sweep), and dispatching follow-up experiments via dit-experiment-runner. Only halts at FAIL requiring user pivot, ambiguous fork, publishable milestone, or resource exhaustion. Invoke after dit-validator passes an idea, OR to advance a running campaign after experiments complete.\n\n<example>\nContext: User wants to start experiments from a validated idea.\nuser: \"이 아이디어로 실험 진행해줘\"\nassistant: \"dit-experiment-planner로 plan + 첫 milestone dispatch할게요.\"\n<commentary>\nValidated idea → plan + campaign launch.\n</commentary>\n</example>\n\n<example>\nContext: User wants the next experiment after a result.\nuser: \"PoC 통과했네, 다음 단계로\"\nassistant: \"dit-experiment-planner로 결과 분류 + 다음 dispatch할게요.\"\n<commentary>\nCampaign continuation.\n</commentary>\n</example>"
-model: opus
+model: claude-opus-4-8
 memory: project
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: "dit-doc-organizer"
 description: "Use this agent to organize, summarize, and structure DiT research documents — idea records, literature review results, validation reports, and experiment findings. Produces clean markdown summaries, paper outlines, and structured research logs. Invoke when the user wants to consolidate scattered research notes, generate a paper outline, or create a readable report from agent memory.\n\n<example>\nContext: User wants to organize all research findings so far.\nuser: \"지금까지 나온 아이디어 검증 결과 깔끔하게 정리해줘\"\nassistant: \"dit-doc-organizer로 아이디어 검증 결과를 구조화된 문서로 정리할게요.\"\n<commentary>\nUser wants to consolidate scattered findings into a clean document. Use dit-doc-organizer.\n</commentary>\n</example>\n\n<example>\nContext: User wants a paper outline from validated ideas.\nuser: \"검증된 아이디어로 논문 아웃라인 잡아줘\"\nassistant: \"dit-doc-organizer가 검증 결과를 바탕으로 논문 구조를 잡아줄게요.\"\n<commentary>\nUser wants a paper outline generated from prior research. Use dit-doc-organizer.\n</commentary>\n</example>\n\n<example>\nContext: User wants a literature review summary.\nuser: \"lit review 결과 표로 정리해줘\"\nassistant: \"dit-doc-organizer로 문헌 검토 결과를 비교표 형태로 정리할게요.\"\n<commentary>\nUser wants structured summarization of literature findings. Use dit-doc-organizer.\n</commentary>\n</example>"
-model: sonnet
+model: claude-sonnet-4-6
 memory: project
 ---
 
